@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <script src="https://kit.fontawesome.com/0e76ac06c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+    <header>
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="https://tfile.com.br/consultarcep.com.br/upload/img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+                <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#">
+                Página Inicial
+                    </a>
+                </div>
+            </div>
+        
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                    <p class="control">
+                    <a class="bd-tw-button button" data-social-network="GitHub" data-social-action="GitHub" data-social-target="https://github.com/aodrog" target="_blank" href="https://github.com/aodrog">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>
+                        GitHub
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<body>
+    <div class="card">
+        <div class="card-content is-1">
+            <div class="content is-4">
+                <div class="columns">
+                    <div class="column is-4">
+                        <input class="input is-primary" type="text" autocomplete="off" maxlength="8" id="cep">
+                    </div>
+                    <div class="column is-1">
+                        <button class="button is-warning is-hovered" id="botao">Pesquisar</button>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <label for="Rua">Rua</label>
+                        <input class="input" type="text" disabled id="rua">
+                    </div>
+                    <div class="column">
+                        <label for="Bairro">Bairro</label>
+                        <input class="input" type="text" disabled id="bairro">
+                    </div>
+                    <div class="column">
+                        <label for="Cidade">Cidade</label>
+                        <input class="input" type="text" disabled id="cidade">
+                    </div>
+                    <div class="column">
+                        <label for="Estado">Estado</label>
+                        <input class="input" type="text" disabled id="estado">
+                    </div>
+                    <div class="column">
+                        <label for="DDD">Prefixo (DD)</label>
+                        <input class="input" type="text" disabled id="ddd">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/consulta.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+        <strong>Consulta de CEP</strong> by <a href="https://github.com/aodrog">Matheus Costa</a>.
+        </p>
+    </div>
+</footer>
+
+</html>
